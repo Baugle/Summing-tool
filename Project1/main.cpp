@@ -1,19 +1,19 @@
-/*ÇóºÍ¹¤¾ß£º°ÑËùÓÐÊäÈëµÄÊý¼ÓÔÚÒ»Æð*/
+/*æ±‚å’Œå·¥å…·ï¼šæŠŠæ‰€æœ‰è¾“å…¥çš„æ•°åŠ åœ¨ä¸€èµ·*/
 #include<stdio.h>
-#include<conio.h>       /*  getchar():ÎÞ·¨½â¾ö Ò»ÉÁ¶ø¹ýµÄÎÊÌâ£¬conioÖÐ_getch¿ÉÒÔ½â¾ö  */
+
 int main(void)
 {
-	long int fir = 0;   /*ÊäÈëµÄÊý¾Ý*/
-	long int sec = 0;   /*×ÜºÍ*/
-	printf("ÕâÊÇÒ»¸öÇóºÍ¹¤¾ß£¬Ö±½ÓÊäÈëÊý×Ö£¬°´¡°q¡±ÍË³ö£¡:");
-	while (scanf_s("%ld",&fir) == 1)  /*Èç¹û¼ÌÐøÊäÈëÊý×ÖÔò½øÐÐÑ­»· £¨sacnf·µ»ØÖµ1»ò0£© */
+	long int fir = 0;   /*è¾“å…¥çš„æ•°æ®*/
+	long int sec = 0;   /*æ€»å’Œ*/
+	printf("è¿™æ˜¯ä¸€ä¸ªæ±‚å’Œå·¥å…·ï¼Œç›´æŽ¥è¾“å…¥æ•°å­—ï¼ŒæŒ‰â€œqâ€é€€å‡ºï¼:");
+	while (scanf_s("%ld",&fir) == 1)  /*å¦‚æžœç»§ç»­è¾“å…¥æ•°å­—åˆ™è¿›è¡Œå¾ªçŽ¯ ï¼ˆsacnfè¿”å›žå€¼1æˆ–0ï¼‰ */
 	{
 		sec = fir + sec;
-		printf("ÊäÈëÊý×Ö£¬°´¡°q¡±ÍË³ö£¡:");
+		printf("è¾“å…¥æ•°å­—ï¼ŒæŒ‰â€œqâ€é€€å‡ºï¼:");
 	}
-	printf("ºÍÎª ¡° %ld ¡±", sec);   /*´òÓ¡ºÍ*/
-	_getch();           /*·ÀÖ¹Ò»ÉÁ¶ø¹ýµÄÎÊÌâ*/
+	printf("å’Œä¸º â€œ %ld â€", sec);   /*æ‰“å°å’Œ*/
+	getchar();           /*é˜²æ­¢ä¸€é—ªè€Œè¿‡çš„é—®é¢˜*/
 	return 0;
-	/*ÈçÐèÔÚ±ðµÄµçÄÔÉÏÔËÐÐ£¬ÔòÐèÒªÉèÖÃÒÔÏÂÄÚÈÝ
-	ÏîÄ¿¡úÊôÐÔ¡úÅäÖÃÊôÐÔ¡ú¸ß¼¶¡úMFCµÄÊ¹ÓÃ¡úÔÚ¾²Ì¬¿âÖÐÊ¹ÓÃMFC*/
+	/*å¦‚éœ€åœ¨åˆ«çš„ç”µè„‘ä¸Šè¿è¡Œï¼Œåˆ™éœ€è¦è®¾ç½®ä»¥ä¸‹å†…å®¹
+	é¡¹ç›®â†’å±žæ€§â†’é…ç½®å±žæ€§â†’é«˜çº§â†’MFCçš„ä½¿ç”¨â†’åœ¨é™æ€åº“ä¸­ä½¿ç”¨MFC*/
 }
